@@ -12,15 +12,20 @@ const Title = styled.div`
 `;
 
 const Row = styled.div`
-  max-width: 880px;
-  margin: 80px auto 40px;
+  max-width: 500px;
+  margin: 40px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 `;
 
+const InputText = styled.input`
+  margin-left: 16px;
+`;
+
 const Button = styled.div`
   text-align: center;
+  margin-top: 32px;
 `;
 
 const FormSubmit = styled.input`
@@ -40,7 +45,7 @@ const Home = () => (
       <form action="/releases">
         <label>
           Release ID:
-          <input type="text" name="id" />
+          <InputText type="text" name="id" />
         </label>
         <Button>
           <FormSubmit type="submit" value="Search" />
