@@ -11,12 +11,14 @@
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "prettier": "^1.14.3"
   },
- "prettier": {
+  "prettier": {
     "singleQuote": true
   }
 }
