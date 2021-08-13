@@ -87,15 +87,8 @@ export default class Releases extends React.Component {
 
   render() {
     const { release } = this.props;
-    const {
-      title,
-      notes,
-      artists,
-      extraartists,
-      companies,
-      labels,
-      uri
-    } = release;
+    const { title, notes, artists, extraartists, companies, labels, uri } =
+      release;
 
     return (
       <div>
@@ -125,7 +118,7 @@ export default class Releases extends React.Component {
                     <ArtistName>{artist.name}</ArtistName>
                   </a>
                   <ArtistDescription>{artist.detail.profile}</ArtistDescription>
-                  {artist.detail.urls.map(url => (
+                  {artist.detail.urls.map((url) => (
                     <ArtistDescription>
                       <a href={url}>{url}</a>
                     </ArtistDescription>
