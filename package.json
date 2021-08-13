@@ -4,7 +4,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "fmt": "prettier --write pages/**/*.js"
+    "fmt": "prettier --write **/*.{js,json,md}"
   },
   "dependencies": {
     "disconnect": "^1.2.2",
