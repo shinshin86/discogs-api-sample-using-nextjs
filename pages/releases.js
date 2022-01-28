@@ -113,13 +113,13 @@ export default class Releases extends React.Component {
             <Card>
               <ArtistName>Artist</ArtistName>
               {artists.map((artist, index) => (
-                <Subcard>
-                  <a href={artist.resource_url} key={index}>
+                <Subcard key={index}>
+                  <a href={artist.resource_url}>
                     <ArtistName>{artist.name}</ArtistName>
                   </a>
                   <ArtistDescription>{artist.detail.profile}</ArtistDescription>
-                  {artist.detail.urls.map((url) => (
-                    <ArtistDescription>
+                  {artist.detail.urls.map((url, index2) => (
+                    <ArtistDescription key={index2}>
                       <a href={url}>{url}</a>
                     </ArtistDescription>
                   ))}
@@ -129,8 +129,8 @@ export default class Releases extends React.Component {
             <Card>
               <ArtistName>Extra Aritists</ArtistName>
               {extraartists.map((ext, index) => (
-                <Subcard>
-                  <a href={ext.resource_url} key={index}>
+                <Subcard key={index}>
+                  <a href={ext.resource_url}>
                     <ArtistName>{ext.name}</ArtistName>
                     <ArtistDescription>{ext.role}</ArtistDescription>
                   </a>
@@ -140,8 +140,8 @@ export default class Releases extends React.Component {
             <Card>
               <ArtistName>Company</ArtistName>
               {companies.map((company, index) => (
-                <Subcard>
-                  <a href={company.resource_url} key={index}>
+                <Subcard key={index}>
+                  <a href={company.resource_url}>
                     <ArtistName>{company.name}</ArtistName>
                     <ArtistDescription>
                       {company.entity_type_name}
@@ -153,8 +153,8 @@ export default class Releases extends React.Component {
             <Card>
               <ArtistName>Label</ArtistName>
               {labels.map((label, index) => (
-                <Subcard>
-                  <a href={label.resource_url} key={index}>
+                <Subcard key={index}>
+                  <a href={label.resource_url}>
                     <ArtistName>{label.name}</ArtistName>
                     <ArtistDescription>{label.catno}</ArtistDescription>
                   </a>
