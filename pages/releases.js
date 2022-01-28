@@ -57,6 +57,7 @@ const Subcard = styled.div`
   text-decoration: none;
   color: #434343;
   border: 1px solid #9b9b9b;
+  overflow-wrap: break-word;
 `;
 
 const ArtistName = styled.h3`
